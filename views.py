@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Producto
 
+
 def index(request):
     context = {
         'ratones': Producto.objects.filter(tipo='raton'),
