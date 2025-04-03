@@ -9,4 +9,5 @@ def index(request):
         'monitores': Producto.objects.filter(tipo='monitor'),
         'cascos': Producto.objects.filter(tipo='casco'),
     }
+
     return render(request, 'productos/index.html', context)
